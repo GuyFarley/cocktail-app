@@ -35,13 +35,16 @@ function Recipe(name, bio, recipe, image) {
 
 // Includes property for "clicks"
 
+
 // **************************** EXECUTABLE CODE - HELPER FUNCTIONS ****************************
+
 
 // Form - Inputs: Radio Buttons for Liquor choices and Vibe choices
 // Submit button on form
 
 // Render recipe card
 // **************************** EVENT HANDLERS ****************************
+
 
 // Event Handler function for submit button
 // If-else statements to determine which recipe object will be displayed on the page

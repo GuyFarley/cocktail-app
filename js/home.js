@@ -71,10 +71,19 @@ new Recipe('Old Fashioned', 'Some would say it’s the king of cocktails, this c
 ]);
 
 new Recipe('Whiskey Highball', 'Some would say it’s the king of cocktails, this cocktail’s origins are as murky as it is storied. Sometimes called the first cocktail, sometimes made with a sugar cube, sometimes with simple syrup, this cocktail is always delicious. Whether you are reaching for the old standby of bourbon, or are looking to branch out into something different, perhaps a rye or a scotch, this recipe will craft an easy transition into a quiet evening. In a rocks glass, combine:', ['2 ounces whiskey of your choice',
-  '.25 ounces of simple syrup',
-  '3-4 dashes of angostura bitters',
-  'Add ice to the glass, and stir a few times to dilute and combine. Express an orange peel to round out one of the oldest, coziest cocktails on the books.'
+  '4 ounces of chilled soda water',
+  'Add ice and a citrus garnish if you desire. Kick up your heels, preferably on a patio'
 ]);
+
+new Recipe('Whiskey Sour', 'An absolute classic, the whiskey sour’s origins are a mystery, but the history of the drink dates back to the Lincoln administration, with it’s first appearance coming to us in 1862. Whether constructed in a civil war era gala, or simply a fancy get together with friends, the whiskey sour makes quite the impression. To construct, combine these ingredients into a shaker tin:', [ '2 ounces whiskey of your choice',
+  '.75 ounces of lemon juice',
+  '.5 ounces of simple syrup (equal parts sugar and water)',
+  '1 egg white (or .75 ounces of pasteurized egg white from a carton)',
+  'First, shake with ice for about 10-15 seconds. Then, add ice and shake for an additional 8-12 seconds or until you hear the mixture go frothy (it’s hard to explain, but you’ll feel it more than you’ll hear it)',
+  'Strain into a chilled cocktail glass. Let rest for a moment before placing a couple drops of angostura bitters on the settled egg foam cap. Drag a toothpick through the drops to create a fancy design. Enjoy with friends, strangers, or royalty, you party animal'
+]);
+
+
 
 // Includes property for "clicks"
 

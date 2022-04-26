@@ -28,7 +28,7 @@ function Recipe(name, bio, recipe, image) {
   this.name = name;
   this.bio = bio;
   this.recipe = recipe;
-  this.image = image;
+  // this.image = image;
   this.clicks = 0;
   // Pushes to allRecipes array
   allRecipes.push(this);
@@ -145,20 +145,38 @@ new Recipe('Mojito', 'Within the bartending community, there is something called
   'Shake all the ingredients with ice and pour into a highball glass and top with soda water. Garnish with a sprig of mint that has been slapped to release the essential oils, and prepare to make 8 more as your party guests see you sipping yours'
 ]);
 
-// Includes property for "clicks"
-
 // **************************** EXECUTABLE CODE - HELPER FUNCTIONS ****************************
 
+console.log(allRecipes[1].name);
+
 // Render recipe card
-
-// **************************** EVENT HANDLERS ****************************
-
 function renderRecipe() {
+
+  // let cardTitle = document.getElementById('title');
+  // let cardTitleName = document.getElementById('name');
+  // let cardBio = document.getElementById('bio');
+  // let cardRecipe = document.getElementById('recipe');
+  // let cardImage = document.getElementById('image');
+  // let cardIngredients = document.getElementById('ingredients');
+
+  if (chosenVibe === 'cozy' && chosenSpirit === 'whiskey') {
+    cardTitleName.textContent = allRecipes[4].name;
+    cardBio.textContent = allRecipes[4].bio;
+    for (let i = 0; i < allRecipes[4].recipe.length; i++) {
+      let liElem = document.createElement('li');
+      cardIngredients.appendChild(liElem);
+      liElem.textContent = allRecipes[4].recipe[i];
+    }
+  }
+
   // If-else statements to determine which recipe object will be displayed on the page
   // Write the appropriate recipe card to the DOM
   // Increments "clicks" on that recipe object by 1
   // Send full updated array of objects into local storage - define new variable as stringified allRecipes array and send to localStorage
 }
+
+// **************************** EVENT HANDLERS ****************************
+
 
 // DONE: Event Handler function for submit button
 function handleSubmit(event) {

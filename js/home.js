@@ -28,7 +28,7 @@ function Recipe(name, bio, recipe, image) {
   this.name = name;
   this.bio = bio;
   this.recipe = recipe;
-  this.image = image;
+  // this.image = image;
   this.clicks = 0;
   // Pushes to allRecipes array
   allRecipes.push(this);
@@ -145,20 +145,149 @@ new Recipe('Mojito', 'Within the bartending community, there is something called
   'Shake all the ingredients with ice and pour into a highball glass and top with soda water. Garnish with a sprig of mint that has been slapped to release the essential oils, and prepare to make 8 more as your party guests see you sipping yours'
 ]);
 
-// Includes property for "clicks"
-
 // **************************** EXECUTABLE CODE - HELPER FUNCTIONS ****************************
 
+
 // Render recipe card
-
-// **************************** EVENT HANDLERS ****************************
-
 function renderRecipe() {
+
+  // let cardTitle = document.getElementById('title');
+  // let cardTitleName = document.getElementById('name');
+  // let cardBio = document.getElementById('bio');
+  // let cardRecipe = document.getElementById('recipe');
+  // let cardImage = document.getElementById('image');
+  // let cardIngredients = document.getElementById('ingredients');
+
+  // if (chosenVibe === 'cozy' && chosenSpirit === 'whiskey') {
+  //   cardTitleName.textContent = allRecipes[4].name;
+  //   cardBio.textContent = allRecipes[4].bio;
+  //   for (let i = 0; i < allRecipes[4].recipe.length; i++) {
+  //     let liElem = document.createElement('li');
+  //     cardIngredients.appendChild(liElem);
+  //     liElem.textContent = allRecipes[4].recipe[i];
+  //   }
+  // }
+
+  switch (chosenVibe) {
+    case 'cozy':
+      switch (chosenSpirit) {
+        case 'gin':
+          cardTitleName.textContent = allRecipes[0].name;
+          cardBio.textContent = allRecipes[0].bio;
+          for (let i = 0; i < allRecipes[0].recipe.length; i++) {
+            let liElem = document.createElement('li');
+            cardIngredients.appendChild(liElem);
+            liElem.textContent = allRecipes[0].recipe[i];
+          }
+          allRecipes[0].clicks++;
+          break;
+        case 'whiskey':
+          cardTitleName.textContent = allRecipes[4].name;
+          cardBio.textContent = allRecipes[4].bio;
+          for (let i = 0; i < allRecipes[4].recipe.length; i++) {
+            let liElem = document.createElement('li');
+            cardIngredients.appendChild(liElem);
+            liElem.textContent = allRecipes[4].recipe[i];
+          }
+          allRecipes[4].clicks++;
+          break;
+        case 'tequila':
+          cardTitleName.textContent = allRecipes[8].name;
+          cardBio.textContent = allRecipes[8].bio;
+          for (let i = 0; i < allRecipes[8].recipe.length; i++) {
+            let liElem = document.createElement('li');
+            cardIngredients.appendChild(liElem);
+            liElem.textContent = allRecipes[8].recipe[i];
+          }
+          allRecipes[8].clicks++;
+          break;
+        case 'rum':
+          cardTitleName.textContent = allRecipes[12].name;
+          cardBio.textContent = allRecipes[12].bio;
+          for (let i = 0; i < allRecipes[12].recipe.length; i++) {
+            let liElem = document.createElement('li');
+            cardIngredients.appendChild(liElem);
+            liElem.textContent = allRecipes[12].recipe[i];
+          }
+          allRecipes[12].clicks++;
+          break;
+        case 'vodka':
+          cardTitleName.textContent = allRecipes[16].name;
+          cardBio.textContent = allRecipes[16].bio;
+          for (let i = 0; i < allRecipes[16].recipe.length; i++) {
+            let liElem = document.createElement('li');
+            cardIngredients.appendChild(liElem);
+            liElem.textContent = allRecipes[16].recipe[i];
+          }
+          allRecipes[16].clicks++;
+          break;
+      }
+      break;
+
+    case 'party':
+      switch (chosenSpirit) {
+        case 'gin':
+          cardTitleName.textContent = allRecipes[3].name;
+          cardBio.textContent = allRecipes[3].bio;
+          for (let i = 0; i < allRecipes[3].recipe.length; i++) {
+            let liElem = document.createElement('li');
+            cardIngredients.appendChild(liElem);
+            liElem.textContent = allRecipes[3].recipe[i];
+          }
+          allRecipes[3].clicks++;
+          break;
+        case 'whiskey':
+          cardTitleName.textContent = allRecipes[7].name;
+          cardBio.textContent = allRecipes[7].bio;
+          for (let i = 0; i < allRecipes[7].recipe.length; i++) {
+            let liElem = document.createElement('li');
+            cardIngredients.appendChild(liElem);
+            liElem.textContent = allRecipes[7].recipe[i];
+          }
+          allRecipes[7].clicks++;
+          break;
+        case 'tequila':
+          cardTitleName.textContent = allRecipes[11].name;
+          cardBio.textContent = allRecipes[11].bio;
+          for (let i = 0; i < allRecipes[11].recipe.length; i++) {
+            let liElem = document.createElement('li');
+            cardIngredients.appendChild(liElem);
+            liElem.textContent = allRecipes[11].recipe[i];
+          }
+          allRecipes[11].clicks++;
+          break;
+        case 'rum':
+          cardTitleName.textContent = allRecipes[14].name;
+          cardBio.textContent = allRecipes[14].bio;
+          for (let i = 0; i < allRecipes[14].recipe.length; i++) {
+            let liElem = document.createElement('li');
+            cardIngredients.appendChild(liElem);
+            liElem.textContent = allRecipes[14].recipe[i];
+          }
+          allRecipes[14].clicks++;
+          break;
+        case 'vodka':
+          cardTitleName.textContent = allRecipes[19].name;
+          cardBio.textContent = allRecipes[19].bio;
+          for (let i = 0; i < allRecipes[19].recipe.length; i++) {
+            let liElem = document.createElement('li');
+            cardIngredients.appendChild(liElem);
+            liElem.textContent = allRecipes[19].recipe[i];
+          }
+          allRecipes[19].clicks++;
+          break;
+      }
+      break;
+  }
+
   // If-else statements to determine which recipe object will be displayed on the page
   // Write the appropriate recipe card to the DOM
   // Increments "clicks" on that recipe object by 1
   // Send full updated array of objects into local storage - define new variable as stringified allRecipes array and send to localStorage
 }
+
+// **************************** EVENT HANDLERS ****************************
+
 
 // DONE: Event Handler function for submit button
 function handleSubmit(event) {

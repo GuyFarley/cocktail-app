@@ -5,6 +5,10 @@
 
 let allRecipes = [];
 
+let userName;
+let chosenVibe;
+let chosenSpirit;
+
 // **************************** DOM REFERENCES ****************************
 
 let cardTitle = document.getElementById('title');
@@ -43,7 +47,7 @@ new Recipe('Martinez', 'Rumored to be invented in the port city of Martinez, Cal
   '1.5 ounces of sweet vermouth',
   '.25 ounces of Luxardo maraschino liqueur',
   '2 dashes of Angostura bitters',
-  'Stir with ice and strain into a glass, but not before expressing an orange peel onto the drink.', 
+  'Stir with ice and strain into a glass, but not before expressing an orange peel onto the drink.',
   'This is a suave and elegant way to unwind after a long day. Cheers.'
 ]);
 
@@ -64,7 +68,7 @@ new Recipe('Gin Fizz', 'Fizzes are a cocktail class all to their own, a classic 
   'Strain into a glass, and then top with the soda water for a frothy extravagant way to announce to the world that the weekend can officially commence.'
 ]);
 
-new Recipe('Old Fashioned', 'Some would say it’s the king of cocktails, this cocktail’s origins are as murky as it is storied. Sometimes called the first cocktail, sometimes made with a sugar cube, sometimes with simple syrup, this cocktail is always delicious. Whether you are reaching for the old standby of bourbon, or are looking to branch out into something different, perhaps a rye or a scotch, this recipe will craft an easy transition into a quiet evening. In a rocks glass, combine:', ['2 ounces whiskey of your choice', 
+new Recipe('Old Fashioned', 'Some would say it’s the king of cocktails, this cocktail’s origins are as murky as it is storied. Sometimes called the first cocktail, sometimes made with a sugar cube, sometimes with simple syrup, this cocktail is always delicious. Whether you are reaching for the old standby of bourbon, or are looking to branch out into something different, perhaps a rye or a scotch, this recipe will craft an easy transition into a quiet evening. In a rocks glass, combine:', ['2 ounces whiskey of your choice',
   '.25 ounces of simple syrup',
   '3-4 dashes of angostura bitters',
   'Add ice to the glass, and stir a few times to dilute and combine. Express an orange peel to round out one of the oldest, coziest cocktails on the books.'
@@ -76,31 +80,36 @@ new Recipe('Whiskey Highball', 'Some would say it’s the king of cocktails, thi
   'Add ice to the glass, and stir a few times to dilute and combine. Express an orange peel to round out one of the oldest, coziest cocktails on the books.'
 ]);
 
-// Includes property for "clicks"
-
 
 // **************************** EXECUTABLE CODE - HELPER FUNCTIONS ****************************
 
-
-// Form - Inputs: Radio Buttons for Liquor choices and Vibe choices
-// Submit button on form
-
 // Render recipe card
+
 // **************************** EVENT HANDLERS ****************************
 
+function renderRecipe() {
+  // If-else statements to determine which recipe object will be displayed on the page
+  // Write the appropriate recipe card to the DOM
+  // Increments "clicks" on that recipe object by 1
+  // Send full updated array of objects into local storage - define new variable as stringified allRecipes array and send to localStorage
+}
 
-// Event Handler function for submit button
-// If-else statements to determine which recipe object will be displayed on the page
-// Write the appropriate recipe card to the DOM
-// Increments "clicks" on that recipe object by 1
-// Send full updated array of objects into local storage - define new variable as stringified allRecipes array and send to localStorage
+// DONE: Event Handler function for submit button
+function handleSubmit(event) {
+  event.preventDefault();
+  userName = event.target.name.value;
+  chosenVibe = event.target.vibe.value;
+  chosenSpirit = event.target.spirit.value;
 
+  renderRecipe();
+}
 
 // **************************** EVENT LISTENERS ****************************
 
-// Event Listener for submit button
+// DONE: Event Listener for submit button
 
-
+const inputForm = document.getElementById('cocktail-form');
+inputForm.addEventListener('submit', handleSubmit);
 
 
 

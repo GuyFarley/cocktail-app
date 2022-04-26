@@ -75,11 +75,77 @@ new Recipe('Old Fashioned', 'Some would say it’s the king of cocktails, this c
 ]);
 
 new Recipe('Whiskey Highball', 'Some would say it’s the king of cocktails, this cocktail’s origins are as murky as it is storied. Sometimes called the first cocktail, sometimes made with a sugar cube, sometimes with simple syrup, this cocktail is always delicious. Whether you are reaching for the old standby of bourbon, or are looking to branch out into something different, perhaps a rye or a scotch, this recipe will craft an easy transition into a quiet evening. In a rocks glass, combine:', ['2 ounces whiskey of your choice',
-  '.25 ounces of simple syrup',
-  '3-4 dashes of angostura bitters',
-  'Add ice to the glass, and stir a few times to dilute and combine. Express an orange peel to round out one of the oldest, coziest cocktails on the books.'
+  '4 ounces of chilled soda water',
+  'Add ice and a citrus garnish if you desire. Kick up your heels, preferably on a patio'
 ]);
 
+new Recipe('Whiskey Sour', 'An absolute classic, the whiskey sour’s origins are a mystery, but the history of the drink dates back to the Lincoln administration, with it’s first appearance coming to us in 1862. Whether constructed in a civil war era gala, or simply a fancy get together with friends, the whiskey sour makes quite the impression. To construct, combine these ingredients into a shaker tin:', ['2 ounces whiskey of your choice',
+  '.75 ounces of lemon juice',
+  '.5 ounces of simple syrup (equal parts sugar and water)',
+  '1 egg white (or .75 ounces of pasteurized egg white from a carton)',
+  'First, shake with ice for about 10-15 seconds. Then, add ice and shake for an additional 8-12 seconds or until you hear the mixture go frothy (it’s hard to explain, but you’ll feel it more than you’ll hear it)',
+  'Strain into a chilled cocktail glass. Let rest for a moment before placing a couple drops of angostura bitters on the settled egg foam cap. Drag a toothpick through the drops to create a fancy design. Enjoy with friends, strangers, or royalty, you party animal'
+]);
+
+new Recipe('Manhattan', 'Relatively unchanged from when it was invented in the late 19th century, the Manhattan is a stalwart of many stellar cocktail menus for a reason. Though originally there was a cocktail for each of the five boroughs, the Manhattan stands as the favorite of many fancy drinkers for nearly 200 years. To create this suave party starter in a glass, in a mixing glass, combine:', ['2 ounces whiskey of your choice',
+  '1 ounce sweet vermouth',
+  '3 dashes angostura bitters',
+  'Stir with ice and strain into a chilled cocktail glass. Garnish with an expressed orange peel. Put on your suavest tuxedo or cocktail dress. Conquer the world. It’s party time'
+]);
+
+new Recipe('Oaxaca Old Fashioned', 'A modern classic, the Oaxaca Old Fashioned is a smoky jaunt to comfort. In 2007 Phil Ward created this delicious citrusy smoky cocktail, and simultaneously kicked off the obsession of mezcal that American drinkers still find themselves in today. To create, in a rocks glass, combine:', ['2 ounces of whatever mezcal or tequila you have on hand (maybe reach for the slightly nicer bottle on this one. You’re just going to have to trust us)',
+  '.25 ounces agave nectar',
+  '2 dashes orange bitters',
+  '2 dashes angostura bitters',
+  'Once combined, add ice and stir. Garnish with a piece of orange peel. Sip, relax, and  indulge in the subdued cultural moment of enjoying a trendy craft cocktail from the comfort of your own home'
+]);
+
+new Recipe('Rosita', 'First appearing in Gary Reagan’s 1991 cocktail book The Bartender’s Bible, the Rosita is a modern classic that is perfectly suited for staying in and avoiding the crowds. A riff on the negroni, this cocktail packs a little bit of a bitter punch, but is tempered by the other ingredients to create a cocktail that other cocktails want to be when they grow up. To make the Rosita, in a mixing glass, combine', ['1.5 reposado tequila of your choice',
+  '.5 ounces Campari',
+  '.5 ounces dry vermouth',
+  '.5 ounces sweet vermouth',
+  '3 dashes angostura bitters',
+  'Stir with ice and strain into a rocks glass over fresh ice. Garnish with an expressed orange peel. Put on the nearest pair of headphones if any loud noises can be heard and threaten to harsh the tranquil vibes that this drink instills'
+]);
+
+new Recipe('Margarita', 'Of any cocktail on this site, this drink is a party in a glass. We dare you to drink it and not break out into dance at any point while you drink it. Like many uber popular classic cocktails, the history is murky here. What is known for absolute fact though, is that margaritas are best enjoyed with friends near a body of water. To create, in a shaker tin, combine:', ['2 ounces tequila of your choice',
+  '.75 ounces lime juice',
+  '.5 ounces lime juice',
+  '.25 ounces agave syrup',
+  'Shake all ingredients in a shaker tin until diluted and chilled. Pour the entire cocktail (shaken ice and all) into a salt rimmed glass with a wedge of lime as a garnish. Tastes best if you scale up the recipe and serve it at your barbecue. Your friends asked us to say that last part'
+]);
+
+
+new Recipe('Paloma', 'A cocktail that has no business being underutilized as it currently is, the paloma has been part of the American cocktail canon since roughly the 1950’s. A perfect fit for any event held in full or dappled sunshine, the paloma is made by, in a highball glass, combining:', ['2 ounces tequila of your choice',
+  '.5 ounces lime juice',
+  '3-4 ounces grapefruit soda',
+  'Once all ingredients are in the glass add ice and a lime wedge garnish. Sip, smile, party, repeat'
+]);
+
+new Recipe('Corn n Oil', 'Containing neither corn nor oil, this cocktail is a bit of a misnomer. Named due to the fact that the darker colored blackstrap rum tends to float on the lighter colored ingredients of the drink, there is a slight oil visual comparison that could be made. Regardless of naming though, this drink is a lovely way to enjoy a private beach, even if it only exists in your mind. To create, in a rocks glass, combine:', ['2 ounces blackstrap rum',
+  '.5 ounces falernum',
+  '.5 ounces lime juice',
+  '3 dashes angostura bitters',
+  'Stir all ingredients with ice and garnish with a lime wedge. Don’t worry about the clock, you’re on island time now'
+]);
+
+new Recipe('Mai Tai', 'Perhaps the most famous drink in the tiki canon, the Mai Tai is a vacation in a glass. Though the origins of this drink are hotly contested, it was likely created in the 1930’s or 1940’s by Donn Beach or Victor “Trader Vic” Bergeron. Regardless, this drink is best enjoyed on a white sand beach, or at home in your most tropical armchair. To create, in a shaker tin, combine:', ['1.5 ounces white rum of your choice',
+  '.75 lime juice',
+  '.5 ounces orange curacao',
+  '.5 ounces orgeat (an almond syrup)',
+  '.5 ounces dark or funky rum (we recommend Appleton 12 if you are going the funky route)',
+  'Shake with ice and garnish with a mint sprig that has been slapped to release the essential oils',
+  'Optionally: reserve the funky or dark rum and slowly pour over the completed cocktail for a more layered effect'
+]);
+
+new Recipe('Mojito', 'Within the bartending community, there is something called the mojito effect. It refers to the fact that if a mojito is ordered, 6 or 7 more will be ordered quickly after. Why? Because it looks and tastes delicious, and it is unquestionably one of the best party starter drinks in the game. To create, in a shaker tin, combine:', ['3-4 mint leaves',
+  '2 ounces white rum of your choice',
+  '.75 ounces lime juice',
+  '.5 ounces simple syrup (equal parts sugar and water)',
+  'Shake all the ingredients with ice and pour into a highball glass and top with soda water. Garnish with a sprig of mint that has been slapped to release the essential oils, and prepare to make 8 more as your party guests see you sipping yours'
+]);
+
+// Includes property for "clicks"
 
 // **************************** EXECUTABLE CODE - HELPER FUNCTIONS ****************************
 

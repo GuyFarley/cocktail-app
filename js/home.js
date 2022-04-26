@@ -5,6 +5,10 @@
 
 let allRecipes = [];
 
+let userName;
+let chosenVibe;
+let chosenSpirit;
+
 // **************************** DOM REFERENCES ****************************
 
 let cardTitle = document.getElementById('title');
@@ -111,6 +115,7 @@ new Recipe('Margarita', 'Of any cocktail on this site, this drink is a party in 
   'Shake all ingredients in a shaker tin until diluted and chilled. Pour the entire cocktail (shaken ice and all) into a salt rimmed glass with a wedge of lime as a garnish. Tastes best if you scale up the recipe and serve it at your barbecue. Your friends asked us to say that last part'
 ]);
 
+
 new Recipe('Paloma', 'A cocktail that has no business being underutilized as it currently is, the paloma has been part of the American cocktail canon since roughly the 1950’s. A perfect fit for any event held in full or dappled sunshine, the paloma is made by, in a highball glass, combining:', ['2 ounces tequila of your choice',
   '.5 ounces lime juice',
   '3-4 ounces grapefruit soda',
@@ -140,36 +145,37 @@ new Recipe('Mojito', 'Within the bartending community, there is something called
   'Shake all the ingredients with ice and pour into a highball glass and top with soda water. Garnish with a sprig of mint that has been slapped to release the essential oils, and prepare to make 8 more as your party guests see you sipping yours'
 ]);
 
-
-
-
-
-
 // Includes property for "clicks"
-
 
 // **************************** EXECUTABLE CODE - HELPER FUNCTIONS ****************************
 
-
-// Form - Inputs: Radio Buttons for Liquor choices and Vibe choices
-// Submit button on form
-
 // Render recipe card
+
 // **************************** EVENT HANDLERS ****************************
 
+function renderRecipe() {
+  // If-else statements to determine which recipe object will be displayed on the page
+  // Write the appropriate recipe card to the DOM
+  // Increments "clicks" on that recipe object by 1
+  // Send full updated array of objects into local storage - define new variable as stringified allRecipes array and send to localStorage
+}
 
-// Event Handler function for submit button
-// If-else statements to determine which recipe object will be displayed on the page
-// Write the appropriate recipe card to the DOM
-// Increments "clicks" on that recipe object by 1
-// Send full updated array of objects into local storage - define new variable as stringified allRecipes array and send to localStorage
+// DONE: Event Handler function for submit button
+function handleSubmit(event) {
+  event.preventDefault();
+  userName = event.target.name.value;
+  chosenVibe = event.target.vibe.value;
+  chosenSpirit = event.target.spirit.value;
 
+  renderRecipe();
+}
 
 // **************************** EVENT LISTENERS ****************************
 
-// Event Listener for submit button
+// DONE: Event Listener for submit button
 
-
+const inputForm = document.getElementById('cocktail-form');
+inputForm.addEventListener('submit', handleSubmit);
 
 
 

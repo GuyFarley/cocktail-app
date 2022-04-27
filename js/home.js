@@ -18,6 +18,9 @@ let cardRecipe = document.getElementById('recipe');
 let cardImage = document.getElementById('image');
 let cardIngredients = document.getElementById('ingredients');
 
+
+
+
 let retrievedRecipes = localStorage.getItem('recipes');
 
 let parsedRecipes = JSON.parse(retrievedRecipes);
@@ -31,7 +34,7 @@ function Recipe(name, bio, recipe, image) {
   this.name = name;
   this.bio = bio;
   this.recipe = recipe;
-  // this.image = image;
+  this.image = image;
   this.clicks = 0;
   // Pushes to allRecipes array
   allRecipes.push(this);
@@ -47,7 +50,7 @@ if (retrievedRecipes) {
     'Stir with ice and strain into a rocks glass over ice.',
     'Garnish with an expressed orange peel to finish out this lovely easy-drinking cocktail.',
     'Relax and enjoy.'
-  ]);
+  ], 'img/Negroni.jpg');
 
   //Recipe #2
   new Recipe('Martinez', 'Rumored to be invented in the port city of Martinez, California in the 19th century, this riff on a classic manhattan is a classy, yet subdued way to end a long day. In a mixing glass combine:', ['1.5 ounces gin of your choice',
@@ -236,6 +239,8 @@ function renderRecipe() {
             cardIngredients.appendChild(liElem);
             liElem.textContent = allRecipes[0].recipe[i];
           }
+          let imageElem = document.getElementById('image');
+          imageElem.src = allRecipes[0].image;
           allRecipes[0].clicks++;
           break;
         case 'whiskey':

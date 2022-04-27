@@ -155,7 +155,7 @@ new Recipe('Daiquiri', 'Supposedly dating all the way back to 1898, when a minin
 new Recipe('Martini', 'With a glut of “Martini Bars” through the 80’s and 90’s, it’s okay to think that the martini has to be some big ado with all sorts of flavors and special rims. In actuality the martini is an exercise of simplicity and omission. While everyone has their specific order and opinion on what makes a perfect martini, ours strays a little from the original recipe (probably invented sometime around the Gold Rush), but we think you’ll enjoy it all the same. In a mixing glass combine:', ['2.5 ounces vodka of your choice',
   '1 ounce of dry vermouth (Dolin is an amazing brand for all kinds of vermouth, we recommend using theirs if you have the choice)',
   '2 dashes of orange bitters',
-  'Mix with ice until thoroughly chilled, then strain into a chilled coupe. As great as James Bond is, he’s a better spy than a drinker. Skip the shake, it’s far too loud for the peace this coziness this drink achieves',
+  'Mix with ice until thoroughly chilled, then strain into a chilled coupe, and garnish with an expressed lemon peel. As great as James Bond is, he’s a better spy than a drinker. Skip the shake, it’s far too loud for the peace this coziness this drink achieves',
 ]);
 
 new Recipe('White Russian', 'The stuff of decadence, the White Russian is a riff on the Black Russian, but is actually not Russian at all in origin. Though it is a product of the 60’s, the White Russian found true fame from the 1998 film “The Big Lebowski”. To create, in a rocks glass, combine:', ['2 ounces vodka of your choice',

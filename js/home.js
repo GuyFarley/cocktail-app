@@ -145,6 +145,38 @@ new Recipe('Mojito', 'Within the bartending community, there is something called
   'Shake all the ingredients with ice and pour into a highball glass and top with soda water. Garnish with a sprig of mint that has been slapped to release the essential oils, and prepare to make 8 more as your party guests see you sipping yours'
 ]);
 
+new Recipe('Daiquiri', 'Supposedly dating all the way back to 1898, when a mining engineer named Jennings Cox created it in the town of Daiquiri in Cuba, the Daiquiri is one of the great grandaddies of cocktails. While often thought of as a blender abomination that should have been left in the 80’s, a shaken daiquiri is widely regarded as the test of a bartender’s skill. We are confident that this recipe will at least get you as far as entertaining your friends and fellow libators. To create, in a shaker, combine:', ['2 ounces white rum of your choice',
+  '.75 ounces lime juice',
+  '.5 ounces simple syrup (equal parts sugar and water)',
+  'A tiny pinch of salt',
+  'Shake with ice and strain into a chilled coupe. Garnish with a lime wheel and graciously receive your award for party starter. You’ve earned it'
+]);
+
+new Recipe('Martini', 'With a glut of “Martini Bars” through the 80’s and 90’s, it’s okay to think that the martini has to be some big ado with all sorts of flavors and special rims. In actuality the martini is an exercise of simplicity and omission. While everyone has their specific order and opinion on what makes a perfect martini, ours strays a little from the original recipe (probably invented sometime around the Gold Rush), but we think you’ll enjoy it all the same. In a mixing glass combine:', ['2.5 ounces vodka of your choice',
+  '1 ounce of dry vermouth (Dolin is an amazing brand for all kinds of vermouth, we recommend using theirs if you have the choice)',
+  '2 dashes of orange bitters',
+  'Mix with ice until thoroughly chilled, then strain into a chilled coupe, and garnish with an expressed lemon peel. As great as James Bond is, he’s a better spy than a drinker. Skip the shake, it’s far too loud for the peace this coziness this drink achieves',
+]);
+
+new Recipe('White Russian', 'The stuff of decadence, the White Russian is a riff on the Black Russian, but is actually not Russian at all in origin. Though it is a product of the 60’s, the White Russian found true fame from the 1998 film “The Big Lebowski”. To create, in a rocks glass, combine:', ['2 ounces vodka of your choice',
+  '1 ounce of Kahlua, or other coffee liqueur',
+  'Add ice and stir, topping with a splash of heavy cream. If you don’t like it, that’s just like, your opinion, man.',
+]);
+
+new Recipe('Lemon Drop', 'Debuting in the 70’s when it was created by Norman Jay Hobday in San Francisco, the Lemon Drop has become a mainstay in pop-culture and bar menus alike. Famously served to Rachel Ray by Oprah on her show in 2006, the Lemon Drop, with it’s sugared rim and incredible drinkability, is a crowd pleaser among crowd pleasers. To get the party started, in a shaker tin, combine:', ['2 ounces vodka of your choice',
+  '.75 ounces lemon juice',
+  '.5 ounces simple syrup (equal parts sugar and water)',
+  '.25 ounces curacao',
+  'Shake all the ingredients with ice and strain into a chilled coupe. Sunshine is optional with this drink, the party is not.'
+]);
+
+new Recipe('Cosmopolitan', 'The Cosmopolitan is debatably one of the most iconic drinks to come out of the 80’s, and it’s popularity was brought to astronomical heights with Sex and the City. A veritable beacon of a good time, the Cosmopolitan simply oozes party vibes. To create, in a shaker tin, combine:', ['1.5 ounces citron vodka of your choice',
+  '.75 ounces orange curacao',
+  '.75 ounces lime juice',
+  '.5 ounces cranberry juice',
+  'Shake all the ingredients with ice and strain into a chilled coup. Garnish with a lime wheel, and embrace your inner Samantha as you take a sip.'
+]);
+
 // **************************** EXECUTABLE CODE - HELPER FUNCTIONS ****************************
 
 

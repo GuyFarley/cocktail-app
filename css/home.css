@@ -1,0 +1,77 @@
+header {
+  width: 100%;
+  background-color: aqua;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav {
+  width: 60%;
+  padding-bottom: .75em;
+}
+
+main {
+  display: block;
+  justify-content: center;
+
+
+}
+
+#description {
+  background-color: blueviolet;
+  width: 55%;
+  padding: 15px;
+  margin: auto;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 2em;
+}
+
+fieldset {
+  width: 500px;
+  height: 275px;
+  flex-direction: column;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 12pt;
+  
+}
+
+
+fieldset label {
+  line-height: 1.6em;
+}
+
+fieldset input {
+  width: 100px;
+}
+
+fieldset button {
+  width: 100px;
+  align-self: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 12pt;
+  margin-top: 20px;
+}
+
+#container{
+  width: 55%;
+  padding: 15px;
+  margin: auto;
+  background-image: url('../img/old-paper.jpg');
+}
+
+#img{
+  display: flex;
+  justify-content: center;
+}
+
+img{
+  max-width: 100px;
+}

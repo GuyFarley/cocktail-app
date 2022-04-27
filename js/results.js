@@ -24,15 +24,28 @@ console.log(`Stringified allRecipes was parsed`);
 //RENDER
 for (let i = 0; i < parsedRecipes.length; i++) {
   if (parsedRecipes[i].clicks > 0) {
+
     let cardTitle = document.createElement('h1');
     containerElem.appendChild(cardTitle);
     cardTitle.textContent = parsedRecipes[i].name;
-    let cardBio = document.createElement('div');
-    containerElem.appendChild();
+
+    let timesChosen = document.createElement('p');
+    containerElem.appendChild(timesChosen);
+    timesChosen.textContent = `You have chosen this cocktail ${parsedRecipes[i].clicks} time(s)`;
+
+    let cardContent = document.createElement('div');
+    containerElem.appendChild(cardContent);
+
+    let cardBio = document.createElement('p');
+    cardContent.appendChild(cardBio);
     cardBio.textContent = parsedRecipes[i].bio;
-    for (let j = 0; j < parsedRecipes[j].recipe.length; j++) {
+
+    let cardRecipe = document.createElement('ul');
+    cardContent.appendChild(cardRecipe);
+
+    for (let j = 0; j < parsedRecipes[i].recipe.length; j++) {
       let liElem = document.createElement('li');
-      cardIngredients.appendChild(liElem);
+      cardRecipe.appendChild(liElem);
       liElem.textContent = parsedRecipes[i].recipe[j];
     }
   }

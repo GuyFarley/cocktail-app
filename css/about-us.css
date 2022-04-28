@@ -41,6 +41,7 @@ nav {
 main{
    display: flex;
    justify-content: center;
+
 }
 
 #bio{
@@ -52,7 +53,7 @@ main{
 .container {
   position: relative;
   width: 100%;
-  
+  margin-top: 40px;
 }
 
 .image {
@@ -90,4 +91,8 @@ main{
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: left;
+}
+
+footer{
+  margin-top: 80px
 }

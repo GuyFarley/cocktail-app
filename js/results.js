@@ -48,6 +48,8 @@ for (let i = 0; i < parsedRecipes.length; i++) {
       cardRecipe.appendChild(liElem);
       liElem.textContent = parsedRecipes[i].recipe[j];
     }
+    // imageElem = document.getElementById('image');
+    // imageElem.src = parsedRecipes[i].image;
   }
   let blankDiv = document.createElement('div');
   containerElem.appendChild(blankDiv);

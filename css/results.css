@@ -1,21 +1,36 @@
 header {
-  width: 100%;
-  background-color: aqua;
+  width: 1000px;
+  background-color: black;
+  margin: auto;
 }
 
-header h1 {
+#logo {
   margin-left: 20px;
-  padding-top: 10px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 8em;
+  color: white;
+}
+
+.link {
+  font-size: 2em;
+  color: white;
+}
+
+a:link{
+  text-decoration: none;
 }
 
 header ul {
   display: flex;
   justify-content: space-around;
+  list-style-type: none;
+  align-items: baseline;
 }
 
 nav {
-  width: 60%;
+  width: 90%;
   padding-bottom: .75em;
+  font-family: 'Oswald', sans-serif;
 }
 
 main {

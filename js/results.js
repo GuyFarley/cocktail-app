@@ -22,8 +22,13 @@ let parsedRecipes = JSON.parse(retrievedRecipes);
 console.log(`Stringified allRecipes was parsed`);
 
 //RENDER
+
+
+
 for (let i = 0; i < parsedRecipes.length; i++) {
+  document.getElementById('container').style.visibility = 'visible';
   if (parsedRecipes[i].clicks > 0) {
+
 
     let cardTitle = document.createElement('h1');
     containerElem.appendChild(cardTitle);
@@ -48,5 +53,16 @@ for (let i = 0; i < parsedRecipes.length; i++) {
       cardRecipe.appendChild(liElem);
       liElem.textContent = parsedRecipes[i].recipe[j];
     }
+    let blankDiv2 = document.createElement('div');
+    cardContent.appendChild(blankDiv2);
+
+    let cardImage = document.createElement('img');
+    blankDiv2.appendChild(cardImage);
+    cardImage.src = "." + parsedRecipes[i].image;
+
+    let horizontalRule = document.createElement('hr');
+    blankDiv2.appendChild(horizontalRule);
   }
+  let blankDiv = document.createElement('div');
+  containerElem.appendChild(blankDiv);
 }

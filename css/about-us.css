@@ -1,18 +1,67 @@
 body {
   background-color: #3e4243;
-  background-image: url('../img/background.jpg');
+ 
 }
 
+header {
+  width: 1000px;
+  background-color: black;
+  margin: auto;
+}
+
+#logo {
+  margin-left: 20px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 8em;
+  color: white;
+}
+
+.link {
+  font-size: 2em;
+  color: white;
+}
+
+a:link{
+  text-decoration: none;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  align-items: baseline;
+}
+
+nav {
+  width: 90%;
+  padding-bottom: .75em;
+  font-family: 'Oswald', sans-serif;
+}
+
+main{
+   display: flex;
+   justify-content: center;
+
+}
+
+#bio{
+  background-image: url('../img/background.jpg');
+  width: 1000px;
+  position: center;
+}
 
 .container {
   position: relative;
-  width: 90%;
+  width: 100%;
+  margin-top: 40px;
 }
 
 .image {
   display: block;
-  /* width: 50%; */
+  z-index: 10;
   height: 250px;
+  border-radius: 10% 40%  50% 20%;
+  padding: 10px;
 }
 
 .overlay {
@@ -24,7 +73,7 @@ body {
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: .5s ease;
+  transition: .7s ease;
   background-color: #3e4243;
 }
 
@@ -41,5 +90,9 @@ body {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  text-align: center;
+  text-align: left;
+}
+
+footer{
+  margin-top: 80px
 }

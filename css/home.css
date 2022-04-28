@@ -1,16 +1,41 @@
+body {
+  background-color: #3e4243;
+  color: white;
+}
+
 header {
-  width: 100%;
-  background-color: aqua;
+  width: 1000px;
+  background-color: black;
+  margin: auto;
+}
+
+#logo {
+  margin-left: 20px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 8em;
+
+}
+
+.link {
+  font-size: 2em;
+  color: white;
+}
+
+a:link {
+  text-decoration: none;
 }
 
 header ul {
   display: flex;
   justify-content: space-around;
+  list-style-type: none;
+  align-items: baseline;
 }
 
 nav {
-  width: 60%;
+  width: 90%;
   padding-bottom: .75em;
+  font-family: 'Oswald', sans-serif;
 }
 
 main {
@@ -19,10 +44,11 @@ main {
 }
 
 #description {
-  background-color: blueviolet;
   width: 55%;
   padding: 15px;
   margin: auto;
+  line-height: 1.5em;
+  font-size: 1.3em;
 }
 
 form {
@@ -30,17 +56,17 @@ form {
   justify-content: center;
   margin-top: 20px;
   margin-bottom: 2em;
+  line-height: 1.25em;
+  font-size: 1.3em;
 }
 
 fieldset {
   width: 500px;
-  height: 275px;
+  height: 345px;
   flex-direction: column;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 12pt;
-  
-}
 
+}
 
 fieldset label {
   line-height: 1.6em;
@@ -58,18 +84,26 @@ fieldset button {
   margin-top: 20px;
 }
 
-#container{
+#container {
   width: 55%;
   padding: 15px;
   margin: auto;
   background-image: url('../img/old-paper.jpg');
+  visibility: hidden;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.3em;
+  color: black;
 }
 
-#img{
+#img {
   display: flex;
-  justify-content: center;
+  justify-content: left;
 }
 
-img{
-  max-width: 100px;
+img {
+  max-width: 300px;
+}
+
+footer {
+  margin-top: 80px
 }

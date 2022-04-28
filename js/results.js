@@ -58,7 +58,7 @@ for (let i = 0; i < parsedRecipes.length; i++) {
 
     let cardImage = document.createElement('img');
     blankDiv2.appendChild(cardImage);
-    cardImage.src = "." + parsedRecipes[i].image;
+    cardImage.src = parsedRecipes[i].image;
 
     let horizontalRule = document.createElement('hr');
     blankDiv2.appendChild(horizontalRule);

@@ -49,4 +49,6 @@ for (let i = 0; i < parsedRecipes.length; i++) {
       liElem.textContent = parsedRecipes[i].recipe[j];
     }
   }
+  let blankDiv = document.createElement('div');
+  containerElem.appendChild(blankDiv);
 }

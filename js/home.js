@@ -206,23 +206,7 @@ if (retrievedRecipes) {
 
 // Render recipe card
 function renderRecipe() {
-
-  // let cardTitle = document.getElementById('title');
-  // let cardTitleName = document.getElementById('name');
-  // let cardBio = document.getElementById('bio');
-  // let cardRecipe = document.getElementById('recipe');
-  // let cardImage = document.getElementById('image');
-  // let cardIngredients = document.getElementById('ingredients');
-
-  // if (chosenVibe === 'cozy' && chosenSpirit === 'whiskey') {
-  //   cardTitleName.textContent = allRecipes[4].name;
-  //   cardBio.textContent = allRecipes[4].bio;
-  //   for (let i = 0; i < allRecipes[4].recipe.length; i++) {
-  //     let liElem = document.createElement('li');
-  //     cardIngredients.appendChild(liElem);
-  //     liElem.textContent = allRecipes[4].recipe[i];
-  //   }
-  // }
+  document.getElementById('container').style.visibility = 'visible';
 
   switch (chosenVibe) {
     case 'cozy':

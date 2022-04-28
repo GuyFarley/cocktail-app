@@ -68,7 +68,6 @@ fieldset {
 
 }
 
-
 fieldset label {
   line-height: 1.6em;
 }
@@ -90,6 +89,7 @@ fieldset button {
   padding: 15px;
   margin: auto;
   background-image: url('../img/old-paper.jpg');
+  visibility: hidden;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 1.3em;
   color: black;
@@ -101,7 +101,7 @@ fieldset button {
 }
 
 img {
-  max-width: 100px;
+  max-width: 300px;
 }
 
 footer{

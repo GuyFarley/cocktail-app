@@ -81,7 +81,7 @@ if (retrievedRecipes) {
     '.25 ounces of simple syrup',
     '3-4 dashes of angostura bitters',
     'Add ice to the glass, and stir a few times to dilute and combine. Express an orange peel to round out one of the oldest, coziest cocktails on the books.'
-  ], './img/old-fashioned.jpg/');
+  ], './img/old-fashioned.jpg');
 
   //Recipe #6
   new Recipe('Whiskey Highball', 'Some would say it’s the king of cocktails, this cocktail’s origins are as murky as it is storied. Sometimes called the first cocktail, sometimes made with a sugar cube, sometimes with simple syrup, this cocktail is always delicious. Whether you are reaching for the old standby of bourbon, or are looking to branch out into something different, perhaps a rye or a scotch, this recipe will craft an easy transition into a quiet evening. In a rocks glass, combine:', ['2 ounces whiskey of your choice',
@@ -143,7 +143,7 @@ if (retrievedRecipes) {
     '.5 ounces lime juice',
     '3 dashes angostura bitters',
     'Stir all ingredients with ice and garnish with a lime wedge. Don’t worry about the clock, you’re on island time now'
-  ]);
+  ], './img/corn-n-oil.jpg');
 
   //Recipe #14
   new Recipe('Mai Tai', 'Perhaps the most famous drink in the tiki canon, the Mai Tai is a vacation in a glass. Though the origins of this drink are hotly contested, it was likely created in the 1930’s or 1940’s by Donn Beach or Victor “Trader Vic” Bergeron. Regardless, this drink is best enjoyed on a white sand beach, or at home in your most tropical armchair. To create, in a shaker tin, combine:', ['1.5 ounces white rum of your choice',
@@ -219,8 +219,8 @@ function renderRecipe() {
             cardIngredients.appendChild(liElem);
             liElem.textContent = allRecipes[0].recipe[i];
           }
-          imageElem = document.getElementById('image');
-          imageElem.src = allRecipes[0].image;
+          cardImage = document.getElementById('image');
+          cardImage.src = allRecipes[0].image;
           allRecipes[0].clicks++;
           break;
         case 'whiskey':
@@ -231,8 +231,8 @@ function renderRecipe() {
             cardIngredients.appendChild(liElem);
             liElem.textContent = allRecipes[4].recipe[i];
           }
-          imageElem = document.getElementById('image');
-          imageElem.src = allRecipes[4].image;
+          cardImage = document.getElementById('image');
+          cardImage.src = allRecipes[4].image;
           allRecipes[4].clicks++;
           break;
         case 'tequila':
@@ -243,8 +243,8 @@ function renderRecipe() {
             cardIngredients.appendChild(liElem);
             liElem.textContent = allRecipes[8].recipe[i];
           }
-          imageElem = document.getElementById('image');
-          imageElem.src = allRecipes[8].image;
+          cardImage = document.getElementById('image');
+          cardImage.src = allRecipes[8].image;
           allRecipes[8].clicks++;
           break;
         case 'rum':
@@ -255,8 +255,8 @@ function renderRecipe() {
             cardIngredients.appendChild(liElem);
             liElem.textContent = allRecipes[12].recipe[i];
           }
-          imageElem = document.getElementById('image');
-          imageElem.src = allRecipes[12].image;
+          cardImage = document.getElementById('image');
+          cardImage.src = allRecipes[12].image;
           allRecipes[12].clicks++;
           break;
         case 'vodka':
@@ -267,8 +267,8 @@ function renderRecipe() {
             cardIngredients.appendChild(liElem);
             liElem.textContent = allRecipes[16].recipe[i];
           }
-          imageElem = document.getElementById('image');
-          imageElem.src = allRecipes[16].image;
+          cardImage = document.getElementById('image');
+          cardImage.src = allRecipes[16].image;
           allRecipes[16].clicks++;
           break;
       }
@@ -284,8 +284,8 @@ function renderRecipe() {
             cardIngredients.appendChild(liElem);
             liElem.textContent = allRecipes[3].recipe[i];
           }
-          imageElem = document.getElementById('image');
-          imageElem.src = allRecipes[3].image;
+          cardImage = document.getElementById('image');
+          cardImage.src = allRecipes[3].image;
           allRecipes[3].clicks++;
           break;
         case 'whiskey':
@@ -296,8 +296,8 @@ function renderRecipe() {
             cardIngredients.appendChild(liElem);
             liElem.textContent = allRecipes[7].recipe[i];
           }
-          imageElem = document.getElementById('image');
-          imageElem.src = allRecipes[7].image;
+          cardImage = document.getElementById('image');
+          cardImage.src = allRecipes[7].image;
           allRecipes[7].clicks++;
           break;
         case 'tequila':
@@ -308,8 +308,8 @@ function renderRecipe() {
             cardIngredients.appendChild(liElem);
             liElem.textContent = allRecipes[11].recipe[i];
           }
-          imageElem = document.getElementById('image');
-          imageElem.src = allRecipes[11].image;
+          cardImage = document.getElementById('image');
+          cardImage.src = allRecipes[11].image;
           allRecipes[11].clicks++;
           break;
         case 'rum':
@@ -320,8 +320,8 @@ function renderRecipe() {
             cardIngredients.appendChild(liElem);
             liElem.textContent = allRecipes[14].recipe[i];
           }
-          imageElem = document.getElementById('image');
-          imageElem.src = allRecipes[14].image;
+          cardImage = document.getElementById('image');
+          cardImage.src = allRecipes[14].image;
           allRecipes[14].clicks++;
           break;
         case 'vodka':
@@ -332,8 +332,8 @@ function renderRecipe() {
             cardIngredients.appendChild(liElem);
             liElem.textContent = allRecipes[19].recipe[i];
           }
-          imageElem = document.getElementById('image');
-          imageElem.src = allRecipes[19].image;
+          cardImage = document.getElementById('image');
+          cardImage.src = allRecipes[19].image;
           allRecipes[19].clicks++;
           break;
       }

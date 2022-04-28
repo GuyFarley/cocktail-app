@@ -1,4 +1,4 @@
-body{
+body {
   background-color: #3e4243;
   color: white;
 }
@@ -13,7 +13,7 @@ header {
   margin-left: 20px;
   font-family: 'Oswald', sans-serif;
   font-size: 8em;
- 
+
 }
 
 .link {
@@ -21,7 +21,7 @@ header {
   color: white;
 }
 
-a:link{
+a:link {
   text-decoration: none;
 }
 
@@ -104,6 +104,6 @@ img {
   max-width: 300px;
 }
 
-footer{
+footer {
   margin-top: 80px
 }

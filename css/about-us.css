@@ -1,6 +1,5 @@
 body {
   background-color: #3e4243;
- 
 }
 
 header {
@@ -21,7 +20,7 @@ header {
   color: white;
 }
 
-a:link{
+a:link {
   text-decoration: none;
 }
 
@@ -38,13 +37,12 @@ nav {
   font-family: 'Oswald', sans-serif;
 }
 
-main{
-   display: flex;
-   justify-content: center;
-
+main {
+  display: flex;
+  justify-content: center;
 }
 
-#bio{
+#bio {
   background-image: url('../img/background.jpg');
   width: 1000px;
   position: center;
@@ -60,7 +58,7 @@ main{
   display: block;
   z-index: 10;
   height: 250px;
-  border-radius: 10% 40%  50% 20%;
+  border-radius: 10% 40% 50% 20%;
   padding: 10px;
 }
 
@@ -93,6 +91,6 @@ main{
   text-align: left;
 }
 
-footer{
+footer {
   margin-top: 80px
 }

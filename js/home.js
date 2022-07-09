@@ -1,27 +1,19 @@
-
-// Alert - "Are you 21 or older?" "Yes" directs to index.html. "No" directs elsewhere
+'use strict';
 
 // **************************** GLOBAL VARIABLES ****************************
 
 let allRecipes = [];
 
-let userName;
-let chosenVibe;
-let chosenSpirit;
-
 // **************************** DOM REFERENCES ****************************
 
-let cardTitle = document.getElementById('title');
 let cardTitleName = document.getElementById('name');
 let cardBio = document.getElementById('bio');
-let cardRecipe = document.getElementById('recipe');
 let cardImage = document.getElementById('image');
 let cardIngredients = document.getElementById('ingredients');
 
 // **************************** LOCAL STORAGE ****************************
 
 let retrievedRecipes = localStorage.getItem('recipes');
-
 let parsedRecipes = JSON.parse(retrievedRecipes);
 
 // **************************** CONSTRUCTOR ****************************
@@ -32,7 +24,6 @@ function Recipe(name, bio, recipe, image) {
   this.recipe = recipe;
   this.image = image;
   this.clicks = 0;
-  // Pushes to allRecipes array
   allRecipes.push(this);
 }
 
@@ -203,9 +194,8 @@ if (retrievedRecipes) {
 }
 // **************************** EXECUTABLE CODE - HELPER FUNCTIONS ****************************
 
-
 // Render recipe card
-function renderRecipe() {
+function renderRecipe(chosenVibe, chosenSpirit) {
   document.getElementById('container').style.visibility = 'visible';
 
   switch (chosenVibe) {
@@ -340,36 +330,26 @@ function renderRecipe() {
       break;
   }
 
-  // If-else statements to determine which recipe object will be displayed on the page
-  // Write the appropriate recipe card to the DOM
-  // Increments "clicks" on that recipe object by 1
-  // Send full updated array of objects into local storage - define new variable as stringified allRecipes array and send to localStorage
 }
 
 // **************************** EVENT HANDLERS ****************************
 
-
-// DONE: Event Handler function for submit button
+// Event Handler function for submit button
 function handleSubmit(event) {
   event.preventDefault();
-  userName = event.target.name.value;
-  chosenVibe = event.target.vibe.value;
-  chosenSpirit = event.target.spirit.value;
+  // let userName = event.target.name.value;
+  let chosenVibe = event.target.vibe.value;
+  let chosenSpirit = event.target.spirit.value;
 
   cardIngredients.innerHTML = '';
-  renderRecipe();
+  renderRecipe(chosenVibe, chosenSpirit);
 
   //LOCAL STORAGE
   let stringifiedRecipes = JSON.stringify(allRecipes);
-  // console.log(`allRecipes was stringified`);
-
   localStorage.setItem('recipes', stringifiedRecipes);
-  // console.log(`Stringified allRecipe was stored locally in "recipes"`);
 }
 
 // **************************** EVENT LISTENERS ****************************
-
-// DONE: Event Listener for submit button
 
 const inputForm = document.getElementById('cocktail-form');
 inputForm.addEventListener('submit', handleSubmit);

@@ -13,7 +13,6 @@ header {
   margin-left: 20px;
   font-family: 'Oswald', sans-serif;
   font-size: 8em;
-
 }
 
 .link {
@@ -65,7 +64,6 @@ fieldset {
   height: 345px;
   flex-direction: column;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
 }
 
 fieldset label {
